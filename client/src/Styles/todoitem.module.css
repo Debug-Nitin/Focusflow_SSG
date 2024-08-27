@@ -1,0 +1,66 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--white);
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.todoDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  /* border-style: double; */
+  font-size: 2rem;
+  word-wrap: break-word;
+}
+.texts {
+  display: flex;
+  color: rgb(14, 202, 140);
+  flex-direction: column;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.todoText {
+  word-break: break-all;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--black-2);
+}
+.todoText--completed {
+  color: #a6a0a7;
+  text-transform: capitalize;
+}
+.time {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: -0.2rem;
+  color: var(--black-2);
+}
+.todoActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--gray-1);
+  color: var(--black-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+}
+.icon:hover {
+  background-color: var(--gray-2);
+}

@@ -1,0 +1,22 @@
+.legend {
+  float: left;
+  margin-left: 30px;
+  font-size: 2rem;
+}
+
+.incomplete {
+  border: 1px solid #ccc;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  background-color: rgb(14, 202, 140);
+}
+.completed {
+  border: 1px solid #ccc;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  background-color: #a6a0a7;
+}
