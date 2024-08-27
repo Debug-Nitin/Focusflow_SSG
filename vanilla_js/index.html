@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Manage your To-Do's</h1>
+    <div class="search-container">
+      <input
+        id="srch"
+        type="text"
+        placeholder="Search for a todo"
+        name="search"
+        oninput="srch()"
+      />
+      <!-- <button type="submit" id="btnsrch">
+        <img class="srch-icon" src="images/search-icon.png" alt="" />
+      </button> -->
+    </div>
+    <div class="task-add">
+      <input
+        type="text"
+        id="input"
+        class="input"
+        placeholder="Enter your todo"
+        autofocus
+      />
+      <button type="submit" id="create" name="Add">ADD To-do</button>
+      <div id="todo-list" class="todo"></div>
+    </div>
+    <template>
+      <div class="todo-item">
+        <input type="checkbox" name="check" id="check" />
+        <p id="todo-text"></p>
+        <p id="todo-decription"></p>
+        <div class="hamburger">
+          <button class="hambutton">
+            <img class="ham-icon" src="images/hamburger.png" alt="ham" />
+          </button>
+          <div class="ham-buttons">
+            <button class="edit">
+              <img class="ham-icon" src="images/edit.png" alt="Edit" />
+            </button>
+            <button class="dlt">
+              <img class="ham-icon" src="images/delete.png" alt="Delete" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <div class="bottom">
+      <footer><p>creator: @Nitin singh ©SuperSixsports pvt ltd</p></footer>
+    </div>
+  </body>
+</html>
